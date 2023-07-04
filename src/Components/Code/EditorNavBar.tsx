@@ -34,17 +34,17 @@ const EditorNavBar: React.FC<{
     useEffect(() => {
         patchBackend();
     }, [language]);
-    const showWriteQrHandler = () => {
-        setqrLink(
-            () =>
-                `${
-                    process.env.NODE_ENV == "production"
-                        ? process.env.NEXT_PUBLIC_CODE_URL_PROD
-                        : process.env.NEXT_PUBLIC_CODE_URL_DEV
-                }/${writeKey}`
-        );
-        setshowQr(true);
-    };
+    // const showWriteQrHandler = () => {
+    //     setqrLink(
+    //         () =>
+    //             `${
+    //                 process.env.NODE_ENV == "production"
+    //                     ? process.env.NEXT_PUBLIC_CODE_URL_PROD
+    //                     : process.env.NEXT_PUBLIC_CODE_URL_DEV
+    //             }/${writeKey}`
+    //     );
+    //     setshowQr(true);
+    // };
     const showReadQrHandler = () => {
         setqrLink(
             () =>
